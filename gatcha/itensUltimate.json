@@ -1,6 +1,5 @@
 {
-    "itens": [
-      {
+    "itens": {
         "itens1": [
           { "name": "Caixa de Tristeza e Determinação", "chance": 0.05 }
         ],
@@ -53,6 +52,5 @@
           { "name": "Cupom de milhagem Ultimate", "chance": 30 }
         ]
       }
-    ]
   }
   

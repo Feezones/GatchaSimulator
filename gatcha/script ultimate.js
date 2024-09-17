@@ -7,12 +7,12 @@ async function callJson() {
         const data = await response.json();  // Converte a resposta em JSON
         console.log(data);  // Manipula o JSON
 
-        // Exemplo: Exibir o JSON no HTML
-        document.getElementById('output').innerHTML = JSON.stringify(data, null, 2);
+        if(data == null)
+            throw new Error('Erro ao ler arquivo JSON');
         
         return data;  // Retorna os dados do JSON
     } catch (error) {
-        console.error('Erro ao carregar o JSON:', error);
+        alert('Erro ao carregar o JSON:', error);
     }
 }
 
