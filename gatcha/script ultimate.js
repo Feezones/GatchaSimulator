@@ -1,29 +1,23 @@
 let totalGanhos = [];
 const maxGanhos = 150;
 
-function gachaSingle() {
-    const prizes = [
-        { name: 'Caixa de Tristeza e Determinação', chance: 0.05 },
-        { name: '103-SnowFlower-OT [Evento] Selado', chance: 0.05 },
-        { name: 'Caixa Aleatória de acessorios de Unidade Zero', chance: 0.45 },
-        { name: 'Caixa Selada de Pacote de Acessorios Hazard', chance: 0.45 },
-        { name: 'Cápsula de memória de habilidades de avançado [Ataque], [Defesa], [Supporte]', chance: 1 },
-        { name: 'DIGI-Chaveiro', chance: 1 },
-        { name: 'Kit de extração de dados evolutivos', chance: 1 },
-        { name: 'Digiclone Mega Reforçado', chance: 2 },
-        { name: 'DigiAura Reforçado Embalado Ver. X [30D]', chance: 2 },
-        { name: 'DigiAura Reforçado Embalado Ver. Y [30D]', chance: 2 },
-        { name: 'Caixa Aleatória All Chip Reforçado R17 ~ R20', chance: 10 },
-        { name: 'Caixa Aleatória Classificação do Atributo  E Lv1 ~ F LvMax', chance: 10 },
-        { name: 'Bilhete de seleção de ingresso para admissão de Dungeon[Evento]', chance: 10 },
-        { name: 'Pedra da Mudança de Status 40un', chance: 10 },
-        { name: 'Pedra da Mudança de Valor 40un', chance: 10 },
-        { name: 'Banana Platinada', chance: 10 },
-        { name: 'Cupom de milhagem Ultimate', chance: 30 },
+async function callJson() {
+    try {
+        const response = await fetch('itensUltimate.json');  // Caminho relativo para o arquivo JSON
+        const data = await response.json();  // Converte a resposta em JSON
+        console.log(data);  // Manipula o JSON
 
-
+        // Exemplo: Exibir o JSON no HTML
+        document.getElementById('output').innerHTML = JSON.stringify(data, null, 2);
         
-    ];
+        return data;  // Retorna os dados do JSON
+    } catch (error) {
+        console.error('Erro ao carregar o JSON:', error);
+    }
+}
+
+async function gachaSingle() {
+    const data = await callJson();
 
     let totalChance = prizes.reduce((acc, curr) => acc + curr.chance, 0);
     let randomNum = Math.random() * totalChance;

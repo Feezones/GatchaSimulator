@@ -1,0 +1,58 @@
+{
+    "itens": [
+      {
+        "itens1": [
+          { "name": "Caixa de Tristeza e Determinação", "chance": 0.05 }
+        ],
+        "itens2": [
+          { "name": "103-SnowFlower-OT [Evento] Selado", "chance": 0.05 }
+        ],
+        "itens3": [
+          { "name": "Caixa Aleatória de acessórios de Unidade Zero", "chance": 0.45 }
+        ],
+        "itens4": [
+          { "name": "Caixa Selada de Pacote de Acessórios Hazard", "chance": 0.45 }
+        ],
+        "itens5": [
+          { "name": "Cápsula de memória de habilidades de avançado [Ataque], [Defesa], [Suporte]", "chance": 1 }
+        ],
+        "itens6": [
+          { "name": "DIGI-Chaveiro", "chance": 1 }
+        ],
+        "itens7": [
+          { "name": "Kit de extração de dados evolutivos", "chance": 1 }
+        ],
+        "itens8": [
+          { "name": "Digiclone Mega Reforçado", "chance": 2 }
+        ],
+        "itens9": [
+          { "name": "DigiAura Reforçado Embalado Ver. X [30D]", "chance": 2 }
+        ],
+        "itens10": [
+          { "name": "DigiAura Reforçado Embalado Ver. Y [30D]", "chance": 2 }
+        ],
+        "itens11": [
+          { "name": "Caixa Aleatória All Chip Reforçado R17 ~ R20", "chance": 10 }
+        ],
+        "itens12": [
+          { "name": "Caixa Aleatória Classificação do Atributo  E Lv1 ~ F LvMax", "chance": 10 }
+        ],
+        "itens13": [
+          { "name": "Bilhete de seleção de ingresso para admissão de Dungeon[Evento]", "chance": 10 }
+        ],
+        "itens14": [
+          { "name": "Pedra da Mudança de Status 40un", "chance": 10 }
+        ],
+        "itens15": [
+          { "name": "Pedra da Mudança de Valor 40un", "chance": 10 }
+        ],
+        "itens16": [
+          { "name": "Banana Platinada", "chance": 10 }
+        ],
+        "itens17": [
+          { "name": "Cupom de milhagem Ultimate", "chance": 30 }
+        ]
+      }
+    ]
+  }
+  
